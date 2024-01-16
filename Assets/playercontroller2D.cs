@@ -18,6 +18,8 @@ public class playercontroller2D : MonoBehaviour
     {
         movement.x = Input.GetAxisRaw("Horizontal");
         movement.y = Input.GetAxisRaw("Vertical");
+
+        movement.Normalize();
     }
 
     void FixedUpdate()
